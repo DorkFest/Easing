@@ -1,6 +1,6 @@
 <?php 
 
-namespace Haberco;
+namespace Haberco\Easing;
 
 /**
  * Easing Functions: 
@@ -16,9 +16,9 @@ namespace Haberco;
  * @param int $c change in value
  * @param int $d duration
  */
-class Easing {
+class Tween {
 
-	public static function linearTween($t, $b, $c, $d) 
+	public static function linear($t, $b, $c, $d) 
 	{
 		return $c*$t/$d + $b;
 	}
