@@ -1,6 +1,7 @@
 {
     "name": "haberco/easing",
-    "type": "library",
+    "version": "dev-master",
+    "type": "package",
     "description": "Robert Penner's JavaScript Easing formulas ported to PHP. Similar to jQuery Easing.",
     "keywords": ["easing", "ease in", "easeIn", "ease out", "easeOut", "math", "jquery", "tween", "animation", "quint", "sine", "quart", "cubic"],
     "authors": [
