@@ -1,6 +1,9 @@
 # Easing Formulas
 
-Robert Penner's JavaScript Easing formulas (http://gizma.com/easing/) ported to PHP. Similar to jQuery Easing.
+Robert Penner's JavaScript Easing formulas (http://gizma.com/easing/) ported to PHP. Similar to jQuery Easing. 
+
+> The "Penner easing functions" have become a standard component of tweening/animation libraries in many languages, from jQuery to Processing. http://www.google.com/#q="penner+easing"
+> https://www.linkedin.com/in/robertpenner
 
 I used this to generate an animated series of computer-generated frames generated in ImageMagick assembled with ffmpeg.
 
@@ -20,56 +23,56 @@ I used this to generate an animated series of computer-generated frames generate
 
 use \Haberco\Easing\Tween;
 
-$totalFrames = 60;
-$low = 0;
-$high = 100;
+$totalFrames = 30;
+$startValue = 50;
+$changeInValue = 100; // final = 150, startValue + changeInValue
 
-for($i=0; $i<$totalFrames; $i++) {
-	$position = Tween::easeOutQuint($i, $high, $low, $totalFrames);
+for($frame=0; $frame<$totalFrames; $frame++) {
+	$position = Tween::easeInCubic($frame, $startValue, $changeInValue, $totalFrames);
 	print "Position is: $position\n";
 }
+
+print "Done.\n";
+
 ```
 
-```text
-Following methods are available. Linear is a convenience utility for animation support.
+Following methods are available:
 
-	// Linear
-	linearTween
+// Linear is a convenience utility for animation support.
+linear
 
-	// Quadratic
-	easeInQuad
-	easeOutQuad
-	easeInOutQuad
+// Quadratic
+easeInQuad
+easeOutQuad
+easeInOutQuad
 
-	// Cubic
-	easeInCubic
-	easeOutCubic
-	easeInOutCubic
+// Cubic
+easeInCubic
+easeOutCubic
+easeInOutCubic
 
-	// Quartic
-	easeInQuart
-	easeOutQuart
-	easeInOutQuart
+// Quartic
+easeInQuart
+easeOutQuart
+easeInOutQuart
 
-	// Quintic
-	easeInQuint
-	easeOutQuint
-	easeInOutQuint
+// Quintic
+easeInQuint
+easeOutQuint
+easeInOutQuint
 
-	// Sinusoidal
-	easeInSine
-	easeOutSine
-	easeInOutSine
+// Sinusoidal
+easeInSine
+easeOutSine
+easeInOutSine
 
-	// Exponential
-	easeInExpo
-	easeOutExpo
-	easeInOutExpo
+// Exponential
+easeInExpo
+easeOutExpo
+easeInOutExpo
 
-	// Circular
-	easeInCirc
-	easeOutCirc
-	easeInOutCirc
-```
-
+// Circular
+easeInCirc
+easeOutCirc
+easeInOutCirc
 
