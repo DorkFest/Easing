@@ -1,5 +1,7 @@
 <?php 
 
+namespace Haberco;
+
 /**
  * Easing Functions: 
  * Ported from JavaScript
