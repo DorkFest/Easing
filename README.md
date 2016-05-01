@@ -20,7 +20,6 @@ I used this to generate an animated series of computer-generated frames generate
 ## Usage
 
 ```php
-
 use \Haberco\Easing\Tween;
 
 $totalFrames = 30;
@@ -33,46 +32,45 @@ for($frame=0; $frame<$totalFrames; $frame++) {
 }
 
 print "Done.\n";
-
 ```
 
 Following methods are available:
 
-// Linear is a convenience utility for animation support.
-linear
+Linear is a convenience utility for animation support.
+* linear
 
-// Quadratic
-easeInQuad
-easeOutQuad
-easeInOutQuad
+Quadratic
+* easeInQuad
+* easeOutQuad
+* easeInOutQuad
 
-// Cubic
-easeInCubic
-easeOutCubic
-easeInOutCubic
+Cubic
+* easeInCubic
+* easeOutCubic
+* easeInOutCubic
 
-// Quartic
-easeInQuart
-easeOutQuart
-easeInOutQuart
+Quartic
+* easeInQuart
+* easeOutQuart
+* easeInOutQuart
 
-// Quintic
-easeInQuint
-easeOutQuint
-easeInOutQuint
+Quintic
+* easeInQuint
+* easeOutQuint
+* easeInOutQuint
 
-// Sinusoidal
-easeInSine
-easeOutSine
-easeInOutSine
+Sinusoidal
+* easeInSine
+* easeOutSine
+* easeInOutSine
 
-// Exponential
-easeInExpo
-easeOutExpo
-easeInOutExpo
+Exponential
+* easeInExpo
+* easeOutExpo
+* easeInOutExpo
 
-// Circular
-easeInCirc
-easeOutCirc
-easeInOutCirc
+Circular
+* easeInCirc
+* easeOutCirc
+* easeInOutCirc
 
